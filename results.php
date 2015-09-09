@@ -33,7 +33,7 @@ include('header.php');
                     <!--Result Tab-->
                     <div class="tab-content-item">
                         <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-12 col-results-visual">
                                 <div id="results-visual" class="results-visual" contenteditable="true">
                                     <table style="margin-top:40px;margin-left:20px;margin-bottom:30px;width:95%" border="0">
                                         <tr height="60">
@@ -69,7 +69,7 @@ include('header.php');
                                         </tr>
                                     </table>
                                 </div>
-                                <a href="#" target="blank">
+                                <a href="#" target="blank" class="results-dl-btn">
                                     <form action="download.php" method="post">
                                         <input type="hidden" name="footer-download" id="footer-download">
                                         <input type="submit" formtarget="_blank" class="dl-btn"
@@ -77,7 +77,7 @@ include('header.php');
                                     </form>
                                 </a>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-md-12">
 
 
                                 <div class="results-code" contentEditable="true">

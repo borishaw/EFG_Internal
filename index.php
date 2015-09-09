@@ -183,7 +183,7 @@ include('header.php');
 						else { echo('col-md-4'); }
 					?>">
 						<span class="input input--hoshi">
-							<input class="input__field input__field--hoshi" type="text" id="<?php echo $key ?>"
+							<input class="input__field input__field--hoshi" type="text" autocomplete="off" id="<?php echo $key ?>"
                            name="<?php echo $key ?>" />
 							<label class="input__label input__label--hoshi" for="<?php echo $key ?>">
 								<span class="input__label-content input__label-content--hoshi">

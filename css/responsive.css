@@ -2,7 +2,7 @@
 /* ---------- TABLETS ---------- */
 @media (max-width: 999px) {
   /* line 17, ../scss/responsive.scss */
-  #form-outer {
+  #form {
     top: 50px;
     width: 700px;
     height: auto;
@@ -30,7 +30,7 @@
 /* ---------- MOBILE ---------- */
 @media (max-width: 768px) {
   /* line 50, ../scss/responsive.scss */
-  #form-outer {
+  #form {
     width: 100%;
     top: 0px;
     margin-bottom: 0;

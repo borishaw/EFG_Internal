@@ -93,17 +93,21 @@ body {
 
 /* ---------- BUTTONS ---------- */
 
+.btn-wrapper {
+  width: 225px;
+  margin: 0 auto;
+}
+
 .fb-btn {
-	width: 100%;
-	height: 40px;
-	color: $white;
-	text-align: center;
-	background: $c-facebook;
+	width: 75px;
+  float: left;
 }
 
 .li-btn {
-	@extend .fb-btn;
-	background: $c-linkedin;
+	width: 140px;
+  float: left;
+  padding-top: 4px;
+  margin-left: 10px;
 }
 
 /* ---------- FORM ---------- */
@@ -255,6 +259,14 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 	pointer-events: none;
 	&.active {
 		pointer-events: all;
+	}
+}
+
+.col-results-visual {
+	margin-bottom: 30px;
+	
+	.results-dl-btn {
+		text-align: center;
 	}
 }
 
