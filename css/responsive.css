@@ -1,0 +1,53 @@
+/* ---------- LARGE SCREENS ---------- */
+/* ---------- TABLETS ---------- */
+@media (max-width: 999px) {
+  /* line 17, ../scss/responsive.scss */
+  #form-outer {
+    top: 50px;
+    width: 700px;
+    height: auto;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    margin-bottom: 50px;
+  }
+
+  /* line 27, ../scss/responsive.scss */
+  .results-code {
+    margin-top: 25px;
+  }
+
+  /* line 32, ../scss/responsive.scss */
+  #results-tabs .tab-menu .tab-menu-item {
+    margin-bottom: 20px;
+  }
+
+  /* line 38, ../scss/responsive.scss */
+  .steps .steps-needed {
+    margin-bottom: 50px;
+  }
+}
+/* ---------- MOBILE ---------- */
+@media (max-width: 768px) {
+  /* line 50, ../scss/responsive.scss */
+  #form-outer {
+    width: 100%;
+    top: 0px;
+    margin-bottom: 0;
+  }
+
+  /* line 56, ../scss/responsive.scss */
+  .fb-btn {
+    margin-bottom: 20px;
+  }
+
+  /* line 60, ../scss/responsive.scss */
+  .wrapper {
+    padding: 0 10px;
+  }
+
+  /* line 64, ../scss/responsive.scss */
+  #results {
+    text-align: center;
+  }
+}

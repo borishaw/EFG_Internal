@@ -1,0 +1,69 @@
+// Email footer generator responsive styles
+
+@import 'mixins';
+
+
+/* ---------- LARGE SCREENS ---------- */
+
+@media (min-width:1400px) {
+	
+}
+
+
+/* ---------- TABLETS ---------- */
+
+@media (max-width:999px) {
+	
+	#form {
+		top: 50px;
+		width: 700px;
+		height: auto;
+		-webkit-transform: none;
+		-ms-transform: none;
+		transform: none;
+		margin-bottom: 50px;
+	}
+	
+	.results-code {
+		margin-top: 25px;
+	}
+	#results-tabs {
+		.tab-menu {
+			.tab-menu-item {
+				margin-bottom: 20px;
+			}
+		}
+	} 
+	.steps {
+		.steps-needed {
+			margin-bottom: 50px;
+		}
+	}
+	
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width:768px) {
+	
+	#form {
+		width: 100%;
+		top: 0px;
+		margin-bottom: 0;
+	}
+	
+	.fb-btn {
+		margin-bottom: 20px;
+	}
+	
+	.wrapper {
+		padding: 0 10px;
+	}
+	
+	#results {
+		text-align: center;
+	}
+	
+}
+

@@ -1,0 +1,354 @@
+// Email Footer Generator styles
+
+@import 'mixins';
+
+* {
+	box-sizing: border-box;
+}
+
+*:focus {
+	outline: none;
+}
+
+a:focus {
+	outline: none;
+}
+
+@media (min-width:768px) {
+	::-webkit-scrollbar-thumb {background-color: $gray-dark; height: auto; border: transparent }
+	::-webkit-scrollbar {background-color: #ccc; height:10px !important; width:5px !important; border: 5px solid #eeeeee }
+}
+
+/* ---------- TYPOGRAPHY ---------- */
+
+body {
+	font-family: $font-main;
+	font-size: 18px;
+	line-height: 1.4em;
+	color: $gray-dark;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: antialiased;
+}
+
+h1 {
+	font-size: 36px;
+	text-align: center;
+	margin: 20px 0 10px 0;
+	line-height: 1.2em;
+}
+
+h2 {
+	font-size: 24px;
+	font-style: italic;
+	color: $ankit-red;
+	margin: 10px 0 15px;
+}
+
+h3 {
+	font-weight: 700;
+}
+
+a {
+	color: $ankit-red;
+	text-decoration: none;
+	@include transition(0.2s);
+	&:hover{
+		color: $ankit-red-dark;
+		text-decoration: none;
+	}
+}
+
+a:visited, a:active, a:focus {
+	@extend a;
+}
+
+/* ---------- GLOBAL ELEMENTS ---------- */
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: $ankit-red url('../img/bg.jpg') no-repeat center fixed;
+	background-size: cover;
+	overflow-x: hidden;
+}
+
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.wrapper {
+	width: 100%;
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 0 40px;
+	&.form-wrapper {
+		height: 100%;
+		padding: 0;
+	}
+}
+
+/* ---------- BUTTONS ---------- */
+
+.fb-btn {
+	width: 100%;
+	height: 40px;
+	color: $white;
+	text-align: center;
+	background: $c-facebook;
+}
+
+.li-btn {
+	@extend .fb-btn;
+	background: $c-linkedin;
+}
+
+/* ---------- FORM ---------- */
+
+
+#form-outer {
+	width: 800px;
+	height: 630px;
+	margin: 0 auto;
+	background: $white;
+	@include v-align;
+	
+	.form-header {
+		width: 100%;
+		text-align: center;
+		padding: 25px;
+		border-bottom: 1px solid $gray-light;
+		.autocomplete-btns {
+			margin: 25px 0 0;
+		}
+	}
+	.form-content {
+		padding: 20px 25px;
+	}
+	
+}
+
+.no-csstransforms #form {
+	top: 40px;
+}
+
+.form-btns {
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+	button {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		border: none;
+		text-align: center;
+		padding: 10px 30px;
+		font-weight: 700;
+		margin-right: 15px;
+		&:focus {
+			outline: none;
+		}
+		&[type='submit'] {
+			background: $gray-dark;
+			color: $white;
+		}
+		&[type='reset']{
+			background: transparent;
+			border: 1px solid $gray-med;
+			color: $gray-dark;
+		}
+	}
+}
+
+/* ---------- INPUT FIELDS ---------- */
+
+@import 'inputs';
+
+div.error {
+  position: absolute;
+  z-index: 99;
+  font-size: 14px;
+  top: -5px;
+  font-weight: 700;
+  color: $ankit-red;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+	background: transparent;
+}
+
+/* ---------- RESULTS ---------- */
+
+#results {
+	position: relative;
+	top: 100px;
+	width: 100%;
+	min-height: 100%;
+	min-height: calc(100% - 100px);
+	background-color: $white;
+}
+
+.results-ad-logo {
+	position: absolute;
+	top: -75px;
+	width: 100%;
+	text-align: center;
+	svg {
+		path {
+			fill: $white;
+		}
+	}
+}
+
+.results-header {
+	padding: 10px;
+	border: 1px solid $gray-light;
+	text-align: center;
+	h1 {
+		display: inline-block;
+		span {
+			font-weight: 700;
+		}
+	}
+	.redo-btn {
+		display: inline-block;
+		font-size: 14px;
+		margin-left: 10px;
+	}
+}
+
+#results-tabs {
+	.tab-menu {
+		text-align: center;
+		padding: 25px 0;
+		.tab-menu-item {
+			display: inline-block;
+			text-align: center;
+			font-weight: 700;
+			margin-right: 15px;
+			width: 175px;
+			background: transparent;
+			border: 1px solid $gray-med;
+			&.active {
+				background: $gray-dark;
+				border-color: $gray-dark;
+				a {
+					color: $white;
+				}
+			}
+			a {
+				display: block;
+				width: 100%;
+				height: 100%;
+				padding: 10px 30px;
+				color: $gray-dark;
+			}
+		}
+	}
+}
+
+.tab-content-item {
+	width: 100%;
+	pointer-events: none;
+	&.active {
+		pointer-events: all;
+	}
+}
+
+.results-visual {
+	width: 100%;
+	height: 200px;
+	margin-bottom: 25px;
+	overflow: auto;
+}
+
+.dl-btn {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 400px;
+	padding: 10px 30px;
+	background: transparent;
+	border: 1px solid $gray-med;
+	color: $gray-dark;
+}
+
+.results-code {
+	width: 100%;
+	min-height: 200px;
+	background: transparent;
+	border: 1px solid $gray-med;
+	color: $gray-dark;
+	overflow: auto;
+	max-height: 400px;
+	font-size: 12px;
+	position: relative;
+	
+	xmp {
+		margin: 0;
+	}
+	
+}
+
+#copy-button {
+	position: absolute;
+	right: 0;
+	top: -1px;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background: transparent;
+	border: 1px solid $gray-med;
+	font-size: 14px;
+}
+
+.steps {
+	.steps-needed {
+		width: 100%;
+		min-height: 200px;
+		background: #F2F2F2;
+		padding: 25px;
+		line-height: 1.8em;
+		.steps-hint {
+			font-size: 16px;
+			color: $gray-med;
+			margin-top: 15px;
+		}
+	}
+	.step-item{
+		margin-bottom: 40px;
+		h2 {
+			i {
+				color: $gray-dark;
+				margin-left: 10px;
+				@include transition(0.2s);
+				&:hover {
+					color: $ankit-red;
+				}
+			}
+		}
+	}
+}
+
+.popup-container {
+  position: relative;
+  background: $white;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  .popup-image {
+		width: 100%;
+		border-bottom: 10px solid $gray-light;
+  }
+  .popup-text {
+		padding: 25px;
+  }
+  
+}
+
+#hidden-results {
+	display: none;
+}
+

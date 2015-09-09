@@ -1,0 +1,31 @@
+// Mixins
+
+// Colors
+$ankit-red: #CF1F25;
+$ankit-red-dark: #A50A16;
+$gray-dark: #4D4D4D;
+$gray-med: #CCCCCC;
+$gray-light: #E6E6E6;
+$white: #FFFFFF;
+$c-facebook: #3B5998;
+$c-linkedin: #0077B5;
+
+// Fonts
+$font-main: "Lato", Helvetiva, Arial, sans-serif;
+
+// Mixins
+@mixin transition($speed) {
+	-webkit-transition: all $speed ease;
+	-moz-transition: all $speed ease;
+	-ms-transition: all $speed ease;
+	-o-transition: all $speed ease;
+	transition: all $speed ease;
+}
+
+@mixin v-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
