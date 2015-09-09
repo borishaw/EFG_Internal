@@ -308,7 +308,7 @@ body {
 /* line 95, ../scss/_inputs.scss */
 .input__label--hoshi::after {
   margin-top: 2px;
-  border-bottom: 4px solid #4d4d4d;
+  border-bottom: 4px solid #cccccc;
   -webkit-transform: translate3d(-100%, 0, 0);
   transform: translate3d(-100%, 0, 0);
   -webkit-transition: -webkit-transform 0.3s;
