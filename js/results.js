@@ -37,7 +37,8 @@
         client.on( "aftercopy", function( event ) {
             //event.target.style.display = "none";
             //alert("Copied text to clipboard: " + event.data["text/plain"] );
-				$('#copy-button').html("Copied!");
+				// $('#copy-button').html("Copied!");
+				$('#copy-button-prompt').fadeIn().delay(1000).fadeOut();
 				// document.selection.empty();
 				window.getSelection().removeAllRanges();
 		  } );

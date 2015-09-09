@@ -304,15 +304,46 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 	
 }
 
-#copy-button {
+.copy-button-wrapper {
 	position: absolute;
-	right: 0;
-	top: -1px;
+	z-index: 10;
+	right: 21px;
+	top: 0;
+}
+
+#copy-button-prompt {
+	background: $ankit-red;
+	padding: 4px;
+	color: $white;
+	text-align: center;
+	font-style: italic;
+	font-size: 14px;
+	width: 140px;
+	position: absolute;
+	top: -45px;
+	right: -7px;
+	display: none;
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: -7px;
+		left: 50%;
+		margin-left: -5px;
+		width: 0; 
+		height: 0; 
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-top: 7px solid $ankit-red;
+	}
+}
+
+#copy-button {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	appearance: none;
-	background: transparent;
-	border: 1px solid $gray-med;
+	background: $gray-dark;
+	color: $white;
+	border: none;
 	font-size: 14px;
 }
 
@@ -363,4 +394,66 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 #hidden-results {
 	display: none;
 }
+
+
+@-webkit-keyframes fadeIn {
+	0% {opacity: .75;left:-1em;}
+	100% {opacity: 1;left: 0;}
+}
+@-moz-keyframes fadeIn {
+	0% {opacity: .75;left:-1em;}
+	100% {opacity: 1;left: 0;}
+}
+@-o-keyframes fadeIn {
+	0% {opacity: .75;left:-1em;}
+	100% {opacity: 1;left: 0;}
+}
+@keyframes fadeIn {
+	0% {opacity: .75;left:-1em;}
+	100% {opacity: 1;left: 0;}
+}
+
+.popup-container {
+	-webkit-animation-name: fadeIn;
+	-moz-animation-name: fadeIn;
+	-o-animation-name: fadeIn;
+	animation-name: fadeIn;
+	-webkit-animation-duration: .25s;
+	-moz-animation-duration: .25s;
+	-ms-animation-duration: .25s;
+	-o-animation-duration: .25s;
+	animation-duration: .25s;
+	-webkit-animation-fill-mode: both;
+	-moz-animation-fill-mode: both;
+	-ms-animation-fill-mode: both;
+	-o-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+}
+
+
+/* ---------- PRETTIFY ---------- */
+
+.prettyprint {
+    padding: 20px;
+	 background: #edf0f3;
+	 
+	 .pln {
+		color: #888888;
+	 }
+	 .tag {
+		color: #5D6C7B;
+	 }
+	 .atn {
+		color: rgb(34, 85, 136);
+	 }
+	 .atv, .str, .typ, .lit, .pun, .com {
+		color: #BE516E;
+	 }
+}
+
+
+
 

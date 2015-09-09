@@ -18,7 +18,7 @@
 	<?php if($active=='results') { ?>
 	<script src="js/lib/velocity.min.js"></script> <!-- Velocity -->
 	<script src="js/lib/tabtab.min.js"></script> <!-- Tabtab -->
-	<script src="js/lib/magnificpopup.min.js"></script> <!-- Magnific Popup -->
+	<script src="js/lib/jquery.magnific-popup.js"></script> <!-- Magnific Popup -->
 	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script> <!-- Code Prettify -->
     <script src="js/zeroclipboard/ZeroClipboard.js"></script> <!-- Zero Clipboard -->
 	 <script src="js/results.js"></script> <!-- Results Main Scripts -->
