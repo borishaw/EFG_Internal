@@ -48,7 +48,10 @@ include('header.php');
                                                      alt="Ankit Designs Logo" width="60" height="60"/>
                                             </td>
                                             <td>
-										 <span style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#888888;line-height:20px;"><b style="color:#d40404;text-transform:uppercase;letter-spacing:2px"><?php echo $_POST['fname'] ?>&nbsp;<?php echo $_POST['mname'] ?>&nbsp;<?php echo $_POST['lname'] ?></b> / <?php echo $_POST['title'] ?></span><br/>
+										 <span style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#888888;line-height:20px;"><b style="color:#d40404;text-transform:uppercase;letter-spacing:2px"><?php echo $_POST['fname'] ?>&nbsp;<?php echo $_POST['mname'] ?>&nbsp;<?php echo $_POST['lname'] ?></b>  <?php
+                                             if ($_POST['title'] != '') {
+                                                 echo '/' . $_POST['title'];
+                                             } ?></span><br/>
 									<span style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#b2b2b2;"><b style="color:#888888">e:</b>&nbsp;&nbsp;<a href="mailto:<?php echo $_POST['email'] ?>" title="email <?php echo $_POST['fname'] ?>" style="text-decoration:none; border-bottom:1px dotted #b2b2b2;color:#b2b2b2"><?php echo $_POST['email'] ?></a>&nbsp;&nbsp;<b style="color:#888888">t:</b>&nbsp;&nbsp;<a href="tel:<?php echo $_POST['phone'] ?>" style="text-decoration:none; border-bottom:1px dotted #b2b2b2;color:#b2b2b2"><?php echo $_POST['phone'] ?></a></span>
                                                 <br/>
                                                 <span style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#b2b2b2; text-decoration:none;"><b style="color:#888888">a:</b>&nbsp;&nbsp;<a href="https://goo.gl/maps/6tp9j" title="View On Google Maps" style="text-decoration:none; border-bottom:1px dotted #b2b2b2;color:#b2b2b2">2355 Derry Road East, Unit 38, Mississauga, ON L5S 1V6</a></span>
@@ -100,7 +103,10 @@ include('header.php');
                                                          alt="Ankit Designs Logo" width="60" height="60"/>
                                                 </td>
                                                 <td>
-                                                    <span style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#888888;line-height:20px;"><b style="color:#d40404;text-transform:uppercase;letter-spacing:2px"><?php echo $_POST['fname'] ?>&nbsp;<?php echo $_POST['mname'] ?>&nbsp;<?php echo $_POST['lname'] ?></b> / <?php echo $_POST['title'] ?></span><br/>
+										 <span style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#888888;line-height:20px;"><b style="color:#d40404;text-transform:uppercase;letter-spacing:2px"><?php echo $_POST['fname'] ?>&nbsp;<?php echo $_POST['mname'] ?>&nbsp;<?php echo $_POST['lname'] ?></b>  <?php
+                                             if ($_POST['title'] != '') {
+                                                 echo '/' . $_POST['title'];
+                                             } ?></span><br/>
                                                     <span style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#b2b2b2;"><b style="color:#888888">e:</b>&nbsp;&nbsp;<a href="mailto:<?php echo $_POST['email'] ?>" title="email <?php echo $_POST['fname'] ?>" style="text-decoration:none; border-bottom:1px dotted #b2b2b2;color:#b2b2b2"><?php echo $_POST['email'] ?></a>&nbsp;&nbsp;<b style="color:#888888">t:</b>&nbsp;&nbsp;<a href="tel:<?php echo $_POST['phone'] ?>" style="text-decoration:none; border-bottom:1px dotted #b2b2b2;color:#b2b2b2"><?php echo $_POST['phone'] ?></a></span>
                                                     <br/>
                                                     <span style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#b2b2b2; text-decoration:none;"><b style="color:#888888">a:</b>&nbsp;&nbsp;<a href="https://goo.gl/maps/6tp9j" title="View On Google Maps" style="text-decoration:none; border-bottom:1px dotted #b2b2b2;color:#b2b2b2">2355 Derry Road East, Unit 38, Mississauga, ON L5S 1V6</a></span>
