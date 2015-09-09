@@ -3,9 +3,11 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST'){
     header('location: index.php');
 }
 
-$file = fopen("footer.html","w");
+$path = "footers/" . $_POST['username'] . ".html";
 
-file_put_contents('footer.html', $_POST['footer-download']);
+$file = fopen($path, "w");
+
+file_put_contents($path, $_POST['footer-download']);
 ?>
 
 <!doctype html>
@@ -21,9 +23,9 @@ file_put_contents('footer.html', $_POST['footer-download']);
 <!--<a href="footer.html" download>Click to download</a>-->
 
 
-<p id="downloadLabel">Your file will begin downloading now. If the download doesn't start, <a href="footer.html" download>click here</a>.</p>
+<p id="downloadLabel">Your file will begin downloading now. If the download doesn't start, <a href="<?php echo $path ?>" download>click here</a>.</p>
 <script>
-downloadFile('footer.html');
+downloadFile("<?php echo $path ?>");
 
 </script>
 

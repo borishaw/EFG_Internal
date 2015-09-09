@@ -48,7 +48,10 @@ include('header.php');
                                                      alt="Ankit Designs Logo" width="60" height="60"/>
                                             </td>
                                             <td>
-										 <span style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#888888;line-height:20px;"><b style="color:#d40404;text-transform:uppercase;letter-spacing:2px"><?php echo $_POST['fname'] ?>&nbsp;<?php echo $_POST['mname'] ?>&nbsp;<?php echo $_POST['lname'] ?></b> / <?php echo $_POST['title'] ?></span><br/>
+										 <span style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#888888;line-height:20px;"><b style="color:#d40404;text-transform:uppercase;letter-spacing:2px"><?php echo $_POST['fname'] ?>&nbsp;<?php echo $_POST['mname'] ?>&nbsp;<?php echo $_POST['lname'] ?></b>  <?php
+                                             if ($_POST['title'] != '') {
+                                                 echo '/&nbsp;' . $_POST['title'];
+                                             } ?></span><br/>
 									<span style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#b2b2b2;"><b style="color:#888888">e:</b>&nbsp;&nbsp;<a href="mailto:<?php echo $_POST['email'] ?>" title="email <?php echo $_POST['fname'] ?>" style="text-decoration:none; border-bottom:1px dotted #b2b2b2;color:#b2b2b2"><?php echo $_POST['email'] ?></a>&nbsp;&nbsp;<b style="color:#888888">t:</b>&nbsp;&nbsp;<a href="tel:<?php echo $_POST['phone'] ?>" style="text-decoration:none; border-bottom:1px dotted #b2b2b2;color:#b2b2b2"><?php echo $_POST['phone'] ?></a></span>
                                                 <br/>
                                                 <span style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#b2b2b2; text-decoration:none;"><b style="color:#888888">a:</b>&nbsp;&nbsp;<a href="https://goo.gl/maps/6tp9j" title="View On Google Maps" style="text-decoration:none; border-bottom:1px dotted #b2b2b2;color:#b2b2b2">2355 Derry Road East, Unit 38, Mississauga, ON L5S 1V6</a></span>
@@ -78,6 +81,9 @@ include('header.php');
                                 <a href="#" target="blank" class="results-dl-btn">
                                     <form action="download.php" method="post">
                                         <input type="hidden" name="footer-download" id="footer-download">
+                                        <input type="hidden" name="username" value="<?php
+                                        echo $_POST['fname'].$_POST['lname']
+                                        ?>">
                                         <input type="submit" formtarget="_blank" class="dl-btn"
                                                value="Download source code" onclick="copyCode();">
                                     </form>
@@ -95,40 +101,42 @@ include('header.php');
                                 <div class="results-code" contentEditable="true">
                                     
 
-                                    <xmp class="prettyprint" id="code-snippet"
-                                         onclick="document.execCommand('selectAll',false,null)"><table style="margin-top:40px;margin-left:20px;margin-bottom:30px;width:95%" border="0">
-	 <tr height="60">
-		  <td width="60">
-				<img src="http://www.ankitdesigns.com/email_sig/images/logo_2.jpg"
-					  alt="Ankit Designs Logo" width="60" height="60"/>
-		  </td>
-		  <td>
-				<span style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#888888;line-height:20px;"><b style="color:#d40404;text-transform:uppercase;letter-spacing:2px"><?php echo $_POST['fname'] ?>&nbsp;<?php echo $_POST['mname'] ?>&nbsp;<?php echo $_POST['lname'] ?></b> / <?php echo $_POST['title'] ?></span><br/>
-				<span style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#b2b2b2;"><b style="color:#888888">e:</b>&nbsp;&nbsp;<a href="mailto:<?php echo $_POST['email'] ?>" title="email <?php echo $_POST['fname'] ?>" style="text-decoration:none; border-bottom:1px dotted #b2b2b2;color:#b2b2b2"><?php echo $_POST['email'] ?></a>&nbsp;&nbsp;<b style="color:#888888">t:</b>&nbsp;&nbsp;<a href="tel:<?php echo $_POST['phone'] ?>" style="text-decoration:none; border-bottom:1px dotted #b2b2b2;color:#b2b2b2"><?php echo $_POST['phone'] ?></a></span>
-				<br/>
-				<span style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#b2b2b2; text-decoration:none;"><b style="color:#888888">a:</b>&nbsp;&nbsp;<a href="https://goo.gl/maps/6tp9j" title="View On Google Maps" style="text-decoration:none; border-bottom:1px dotted #b2b2b2;color:#b2b2b2">2355 Derry Road East, Unit 38, Mississauga, ON L5S 1V6</a></span>
-				<br/>
-				<span style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#b2b2b2; text-decoration:none;"><b style="color:#888888">w:</b>&nbsp;&nbsp;<a href="http://www.ankitdesigns.com" title="Visit Ankit Designs Website" style="text-decoration:none; border-bottom:1px dotted #888888;color:#b2b2b2">www.ankitdesigns.com</a></span>
-				<br/>
-		  <span style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#888888;line-height: 40px;"><a href="<?php
-				if ($_POST['facebook'] == '') {
-					 echo 'http://www.facebook.com/viewankitdesigns';
-				} else {
-					 echo $_POST['facebook'];
-				}
-				?>" title="Like On Facebook"><img
-						  src="http://www.ankitdesigns.com/email_sig/images/fb.jpg"/></a>&nbsp;&nbsp;<a
-					 href="<?php
-					 if ($_POST['linkedin'] == '') {
-						  echo 'http://www.linkedin.com/company/ankit-designs';
-					 } else {
-						  echo $_POST['linkedin'];
-					 }
-					 ?>" title="Connect On Linked In"><img src="http://www.ankitdesigns.com/email_sig/images/li.jpg"/></a>
-		  </span>
-		  </td>
-	 </tr>
-</table>
+                                    <xmp class="prettyprint" id="code-snippet" onclick="document.execCommand('selectAll',false,null)"><table style="margin-top:40px;margin-left:20px;margin-bottom:30px;width:95%" border="0">
+		<tr height="60">
+			 <td width="60">
+				  <img src="http://www.ankitdesigns.com/email_sig/images/logo_2.jpg"
+						 alt="Ankit Designs Logo" width="60" height="60"/>
+			 </td>
+			 <td>
+<span style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#888888;line-height:20px;"><b style="color:#d40404;text-transform:uppercase;letter-spacing:2px"><?php echo $_POST['fname'] ?>&nbsp;<?php echo $_POST['mname'] ?>&nbsp;<?php echo $_POST['lname'] ?></b>  <?php
+		 if ($_POST['title'] != '') {
+			  echo '/&nbsp;' . $_POST['title'];
+		 } ?></span><br/>
+				  <span style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#b2b2b2;"><b style="color:#888888">e:</b>&nbsp;&nbsp;<a href="mailto:<?php echo $_POST['email'] ?>" title="email <?php echo $_POST['fname'] ?>" style="text-decoration:none; border-bottom:1px dotted #b2b2b2;color:#b2b2b2"><?php echo $_POST['email'] ?></a>&nbsp;&nbsp;<b style="color:#888888">t:</b>&nbsp;&nbsp;<a href="tel:<?php echo $_POST['phone'] ?>" style="text-decoration:none; border-bottom:1px dotted #b2b2b2;color:#b2b2b2"><?php echo $_POST['phone'] ?></a></span>
+				  <br/>
+				  <span style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#b2b2b2; text-decoration:none;"><b style="color:#888888">a:</b>&nbsp;&nbsp;<a href="https://goo.gl/maps/6tp9j" title="View On Google Maps" style="text-decoration:none; border-bottom:1px dotted #b2b2b2;color:#b2b2b2">2355 Derry Road East, Unit 38, Mississauga, ON L5S 1V6</a></span>
+				  <br/>
+				  <span style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#b2b2b2; text-decoration:none;"><b style="color:#888888">w:</b>&nbsp;&nbsp;<a href="http://www.ankitdesigns.com" title="Visit Ankit Designs Website" style="text-decoration:none; border-bottom:1px dotted #888888;color:#b2b2b2">www.ankitdesigns.com</a></span>
+				  <br/>
+			 <span style="font-family:'Trebuchet MS',helvetica,San-Serif;font-size:11px;color:#888888;line-height: 40px;"><a href="<?php
+				  if ($_POST['facebook'] == '') {
+						echo 'http://www.facebook.com/viewankitdesigns';
+				  } else {
+						echo $_POST['facebook'];
+				  }
+				  ?>" title="Like On Facebook"><img
+							 src="http://www.ankitdesigns.com/email_sig/images/fb.jpg"/></a>&nbsp;&nbsp;<a
+						href="<?php
+						if ($_POST['linkedin'] == '') {
+							 echo 'http://www.linkedin.com/company/ankit-designs';
+						} else {
+							 echo $_POST['linkedin'];
+						}
+						?>" title="Connect On Linked In"><img src="http://www.ankitdesigns.com/email_sig/images/li.jpg"/></a>
+			 </span>
+			 </td>
+		</tr>
+  </table>
                                     </xmp>
                                 </div>
                             </div>
