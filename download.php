@@ -1,4 +1,8 @@
 <?php
+if ($_SERVER['REQUEST_METHOD'] != 'POST'){
+    header('location: index.php');
+}
+
 $file = fopen("footer.html","w");
 
 file_put_contents('footer.html', $_POST['footer-download']);
