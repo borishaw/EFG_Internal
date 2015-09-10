@@ -78,7 +78,7 @@ include('header.php');
                                         </tr>
                                     </table>
                                 </div>
-                                <a href="#" target="blank" class="results-dl-btn">
+                                <a class="results-dl-btn">
                                     <form action="download.php" method="post">
                                         <input type="hidden" name="footer-download" id="footer-download">
                                         <input type="hidden" name="username" value="<?php
