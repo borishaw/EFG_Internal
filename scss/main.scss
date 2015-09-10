@@ -277,11 +277,10 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 	height: 200px;
 	margin-bottom: 25px;
 	overflow: auto;
-	line-height: normal;
-	line-height: initial;
+	line-height: 1;
 	
 	td, tr {
-		vertical-align: top !important
+		vertical-align: middle !important
 	}
 }
 
