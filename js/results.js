@@ -41,11 +41,10 @@ function copyCode() {
 
 $(document).ready(function () {
     //Grab the footer code and append it to the XMP tag
-    $('#code-snippet').text($('#results-visual').html());
-
-    var client = new ZeroClipboard(document.getElementById("copy-button"));
+    $('xmp').text($('#results-visual').html());
 
     // Zero Clipboard
+    var client = new ZeroClipboard(document.getElementById("copy-button"));
     client.on("ready", function (readyEvent) {
         console.log( "ZeroClipboard SWF is ready!" );
 
