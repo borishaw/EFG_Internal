@@ -536,21 +536,20 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 /* line 292, ../scss/main.scss */
 .results-code {
   width: 100%;
-  min-height: 200px;
+  height: 400px;
   background: transparent;
   border: 1px solid #cccccc;
   color: #4d4d4d;
   overflow: auto;
-  max-height: 400px;
   font-size: 12px;
   position: relative;
 }
-/* line 303, ../scss/main.scss */
+/* line 302, ../scss/main.scss */
 .results-code xmp {
   margin: 0;
 }
 
-/* line 309, ../scss/main.scss */
+/* line 308, ../scss/main.scss */
 .copy-button-wrapper {
   position: absolute;
   z-index: 10;
@@ -558,7 +557,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   top: 0;
 }
 
-/* line 316, ../scss/main.scss */
+/* line 315, ../scss/main.scss */
 #copy-button-prompt {
   background: #cf1f25;
   padding: 4px;
@@ -572,7 +571,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   right: -7px;
   display: none;
 }
-/* line 328, ../scss/main.scss */
+/* line 327, ../scss/main.scss */
 #copy-button-prompt:after {
   content: '';
   position: absolute;
@@ -586,7 +585,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   border-top: 7px solid #cf1f25;
 }
 
-/* line 342, ../scss/main.scss */
+/* line 341, ../scss/main.scss */
 #copy-button {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -597,7 +596,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   font-size: 14px;
 }
 
-/* line 353, ../scss/main.scss */
+/* line 352, ../scss/main.scss */
 .steps .steps-needed {
   width: 100%;
   min-height: 200px;
@@ -605,17 +604,17 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   padding: 25px;
   line-height: 1.8em;
 }
-/* line 359, ../scss/main.scss */
+/* line 358, ../scss/main.scss */
 .steps .steps-needed .steps-hint {
   font-size: 16px;
   color: #cccccc;
   margin-top: 15px;
 }
-/* line 365, ../scss/main.scss */
+/* line 364, ../scss/main.scss */
 .steps .step-item {
   margin-bottom: 40px;
 }
-/* line 368, ../scss/main.scss */
+/* line 367, ../scss/main.scss */
 .steps .step-item h2 i {
   color: #4d4d4d;
   margin-left: 10px;
@@ -625,12 +624,12 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-/* line 372, ../scss/main.scss */
+/* line 371, ../scss/main.scss */
 .steps .step-item h2 i:hover {
   color: #cf1f25;
 }
 
-/* line 380, ../scss/main.scss */
+/* line 379, ../scss/main.scss */
 .popup-container {
   position: relative;
   background: white;
@@ -638,29 +637,29 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   max-width: 800px;
   margin: 20px auto;
 }
-/* line 386, ../scss/main.scss */
+/* line 385, ../scss/main.scss */
 .popup-container .popup-image {
   width: 100%;
   border-bottom: 10px solid #e6e6e6;
 }
-/* line 390, ../scss/main.scss */
+/* line 389, ../scss/main.scss */
 .popup-container .popup-text {
   padding: 25px;
 }
 
-/* line 396, ../scss/main.scss */
+/* line 395, ../scss/main.scss */
 #hidden-results {
   display: none;
 }
 
 @-webkit-keyframes fadeIn {
-  /* line 402, ../scss/main.scss */
+  /* line 401, ../scss/main.scss */
   0% {
     opacity: .75;
     left: -1em;
   }
 
-  /* line 403, ../scss/main.scss */
+  /* line 402, ../scss/main.scss */
   100% {
     opacity: 1;
     left: 0;
@@ -668,13 +667,13 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 @-moz-keyframes fadeIn {
-  /* line 406, ../scss/main.scss */
+  /* line 405, ../scss/main.scss */
   0% {
     opacity: .75;
     left: -1em;
   }
 
-  /* line 407, ../scss/main.scss */
+  /* line 406, ../scss/main.scss */
   100% {
     opacity: 1;
     left: 0;
@@ -682,13 +681,13 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 @-o-keyframes fadeIn {
-  /* line 410, ../scss/main.scss */
+  /* line 409, ../scss/main.scss */
   0% {
     opacity: .75;
     left: -1em;
   }
 
-  /* line 411, ../scss/main.scss */
+  /* line 410, ../scss/main.scss */
   100% {
     opacity: 1;
     left: 0;
@@ -696,20 +695,20 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 @keyframes fadeIn {
-  /* line 414, ../scss/main.scss */
+  /* line 413, ../scss/main.scss */
   0% {
     opacity: .75;
     left: -1em;
   }
 
-  /* line 415, ../scss/main.scss */
+  /* line 414, ../scss/main.scss */
   100% {
     opacity: 1;
     left: 0;
   }
 }
 
-/* line 418, ../scss/main.scss */
+/* line 417, ../scss/main.scss */
 .popup-container {
   -webkit-animation-name: fadeIn;
   -moz-animation-name: fadeIn;
@@ -731,24 +730,24 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 /* ---------- PRETTIFY ---------- */
-/* line 441, ../scss/main.scss */
+/* line 440, ../scss/main.scss */
 .prettyprint {
   padding: 20px;
   background: #edf0f3;
 }
-/* line 445, ../scss/main.scss */
+/* line 444, ../scss/main.scss */
 .prettyprint .pln {
   color: #888888;
 }
-/* line 448, ../scss/main.scss */
+/* line 447, ../scss/main.scss */
 .prettyprint .tag {
   color: #5D6C7B;
 }
-/* line 451, ../scss/main.scss */
+/* line 450, ../scss/main.scss */
 .prettyprint .atn {
   color: #225588;
 }
-/* line 454, ../scss/main.scss */
+/* line 453, ../scss/main.scss */
 .prettyprint .atv, .prettyprint .str, .prettyprint .typ, .prettyprint .lit, .prettyprint .pun, .prettyprint .com {
   color: #BE516E;
 }

@@ -55,3 +55,8 @@
 function copyCode() {
 		$('#footer-download').val(($('#results-visual').html()));
   }
+
+//Grab the footer code and append it to the XMP tag
+$(document).ready(function(){
+	$('#code-snippet').text($('#results-visual').html());
+});
