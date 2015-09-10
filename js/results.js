@@ -8,8 +8,9 @@
 			tabMenu: '.tab-menu',             // direct container of the tab menu items
 			tabContent: '.tab-content',       // direct container of the tab content items
 			startSlide: 1,                    // starting slide on pageload
+			// dynamicHeight: true,                // if true the height will dynamic and animated.
 			arrows: false,                       // keyboard arrow navigation
-			dynamicHeight: true,                // if true the height will dynamic and animated.
+			animateHeight:!1,fixedHeight:!1
 		});
 	}
 	

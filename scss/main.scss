@@ -84,10 +84,12 @@ body {
 	width: 100%;
 	max-width: 1300px;
 	margin: 0 auto;
-	padding: 0 40px;
+	padding: 0 40px 70px;
+	overflow: hidden;
 	&.form-wrapper {
 		height: 100%;
 		padding: 0;
+		overflow: auto;
 	}
 }
 

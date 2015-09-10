@@ -102,28 +102,30 @@ body {
   width: 100%;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 40px 70px;
+  overflow: hidden;
 }
-/* line 88, ../scss/main.scss */
+/* line 89, ../scss/main.scss */
 .wrapper.form-wrapper {
   height: 100%;
   padding: 0;
+  overflow: auto;
 }
 
 /* ---------- BUTTONS ---------- */
-/* line 96, ../scss/main.scss */
+/* line 98, ../scss/main.scss */
 .btn-wrapper {
   width: 225px;
   margin: 0 auto;
 }
 
-/* line 101, ../scss/main.scss */
+/* line 103, ../scss/main.scss */
 .fb-btn {
   width: 75px;
   float: left;
 }
 
-/* line 106, ../scss/main.scss */
+/* line 108, ../scss/main.scss */
 .li-btn {
   width: 140px;
   float: left;
@@ -132,7 +134,7 @@ body {
 }
 
 /* ---------- FORM ---------- */
-/* line 116, ../scss/main.scss */
+/* line 118, ../scss/main.scss */
 #form-outer {
   width: 800px;
   height: 630px;
@@ -144,34 +146,34 @@ body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 123, ../scss/main.scss */
+/* line 125, ../scss/main.scss */
 #form-outer .form-header {
   width: 100%;
   text-align: center;
   padding: 25px;
   border-bottom: 1px solid #e6e6e6;
 }
-/* line 128, ../scss/main.scss */
+/* line 130, ../scss/main.scss */
 #form-outer .form-header .autocomplete-btns {
   margin: 25px 0 0;
 }
-/* line 132, ../scss/main.scss */
+/* line 134, ../scss/main.scss */
 #form-outer .form-content {
   padding: 20px 25px;
 }
 
-/* line 138, ../scss/main.scss */
+/* line 140, ../scss/main.scss */
 .no-csstransforms #form {
   top: 40px;
 }
 
-/* line 142, ../scss/main.scss */
+/* line 144, ../scss/main.scss */
 .form-btns {
   width: 100%;
   text-align: center;
   margin-top: 10px;
 }
-/* line 146, ../scss/main.scss */
+/* line 148, ../scss/main.scss */
 .form-btns button {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -182,16 +184,16 @@ body {
   font-weight: 700;
   margin-right: 15px;
 }
-/* line 155, ../scss/main.scss */
+/* line 157, ../scss/main.scss */
 .form-btns button:focus {
   outline: none;
 }
-/* line 158, ../scss/main.scss */
+/* line 160, ../scss/main.scss */
 .form-btns button[type='submit'] {
   background: #4d4d4d;
   color: white;
 }
-/* line 162, ../scss/main.scss */
+/* line 164, ../scss/main.scss */
 .form-btns button[type='reset'] {
   background: transparent;
   border: 1px solid #cccccc;
@@ -401,7 +403,7 @@ body {
   }
 }
 
-/* line 174, ../scss/main.scss */
+/* line 176, ../scss/main.scss */
 div.error {
   position: absolute;
   z-index: 99;
@@ -411,13 +413,13 @@ div.error {
   color: #cf1f25;
 }
 
-/* line 183, ../scss/main.scss */
+/* line 185, ../scss/main.scss */
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   background: transparent;
 }
 
 /* ---------- RESULTS ---------- */
-/* line 189, ../scss/main.scss */
+/* line 191, ../scss/main.scss */
 #results {
   position: relative;
   top: 100px;
@@ -427,45 +429,45 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   background-color: white;
 }
 
-/* line 198, ../scss/main.scss */
+/* line 200, ../scss/main.scss */
 .results-ad-logo {
   position: absolute;
   top: -75px;
   width: 100%;
   text-align: center;
 }
-/* line 204, ../scss/main.scss */
+/* line 206, ../scss/main.scss */
 .results-ad-logo svg path {
   fill: white;
 }
 
-/* line 210, ../scss/main.scss */
+/* line 212, ../scss/main.scss */
 .results-header {
   padding: 10px;
   border: 1px solid #e6e6e6;
   text-align: center;
 }
-/* line 214, ../scss/main.scss */
+/* line 216, ../scss/main.scss */
 .results-header h1 {
   display: inline-block;
 }
-/* line 216, ../scss/main.scss */
+/* line 218, ../scss/main.scss */
 .results-header h1 span {
   font-weight: 700;
 }
-/* line 220, ../scss/main.scss */
+/* line 222, ../scss/main.scss */
 .results-header .redo-btn {
   display: inline-block;
   font-size: 14px;
   margin-left: 10px;
 }
 
-/* line 228, ../scss/main.scss */
+/* line 230, ../scss/main.scss */
 #results-tabs .tab-menu {
   text-align: center;
   padding: 25px 0;
 }
-/* line 231, ../scss/main.scss */
+/* line 233, ../scss/main.scss */
 #results-tabs .tab-menu .tab-menu-item {
   display: inline-block;
   text-align: center;
@@ -475,16 +477,16 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   background: transparent;
   border: 1px solid #cccccc;
 }
-/* line 239, ../scss/main.scss */
+/* line 241, ../scss/main.scss */
 #results-tabs .tab-menu .tab-menu-item.active {
   background: #4d4d4d;
   border-color: #4d4d4d;
 }
-/* line 242, ../scss/main.scss */
+/* line 244, ../scss/main.scss */
 #results-tabs .tab-menu .tab-menu-item.active a {
   color: white;
 }
-/* line 246, ../scss/main.scss */
+/* line 248, ../scss/main.scss */
 #results-tabs .tab-menu .tab-menu-item a {
   display: block;
   width: 100%;
@@ -493,26 +495,26 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   color: #4d4d4d;
 }
 
-/* line 257, ../scss/main.scss */
+/* line 259, ../scss/main.scss */
 .tab-content-item {
   width: 100%;
   pointer-events: none;
 }
-/* line 260, ../scss/main.scss */
+/* line 262, ../scss/main.scss */
 .tab-content-item.active {
   pointer-events: all;
 }
 
-/* line 265, ../scss/main.scss */
+/* line 267, ../scss/main.scss */
 .col-results-visual {
   margin-bottom: 30px;
 }
-/* line 268, ../scss/main.scss */
+/* line 270, ../scss/main.scss */
 .col-results-visual .results-dl-btn {
   text-align: center;
 }
 
-/* line 273, ../scss/main.scss */
+/* line 275, ../scss/main.scss */
 .results-visual {
   width: 100%;
   height: 200px;
@@ -520,7 +522,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   overflow: auto;
 }
 
-/* line 280, ../scss/main.scss */
+/* line 282, ../scss/main.scss */
 .dl-btn {
   margin: 0 auto;
   width: 100%;
@@ -531,7 +533,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   color: #4d4d4d;
 }
 
-/* line 290, ../scss/main.scss */
+/* line 292, ../scss/main.scss */
 .results-code {
   width: 100%;
   min-height: 200px;
@@ -543,12 +545,12 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   font-size: 12px;
   position: relative;
 }
-/* line 301, ../scss/main.scss */
+/* line 303, ../scss/main.scss */
 .results-code xmp {
   margin: 0;
 }
 
-/* line 307, ../scss/main.scss */
+/* line 309, ../scss/main.scss */
 .copy-button-wrapper {
   position: absolute;
   z-index: 10;
@@ -556,7 +558,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   top: 0;
 }
 
-/* line 314, ../scss/main.scss */
+/* line 316, ../scss/main.scss */
 #copy-button-prompt {
   background: #cf1f25;
   padding: 4px;
@@ -570,7 +572,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   right: -7px;
   display: none;
 }
-/* line 326, ../scss/main.scss */
+/* line 328, ../scss/main.scss */
 #copy-button-prompt:after {
   content: '';
   position: absolute;
@@ -584,7 +586,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   border-top: 7px solid #cf1f25;
 }
 
-/* line 340, ../scss/main.scss */
+/* line 342, ../scss/main.scss */
 #copy-button {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -595,7 +597,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   font-size: 14px;
 }
 
-/* line 351, ../scss/main.scss */
+/* line 353, ../scss/main.scss */
 .steps .steps-needed {
   width: 100%;
   min-height: 200px;
@@ -603,17 +605,17 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   padding: 25px;
   line-height: 1.8em;
 }
-/* line 357, ../scss/main.scss */
+/* line 359, ../scss/main.scss */
 .steps .steps-needed .steps-hint {
   font-size: 16px;
   color: #cccccc;
   margin-top: 15px;
 }
-/* line 363, ../scss/main.scss */
+/* line 365, ../scss/main.scss */
 .steps .step-item {
   margin-bottom: 40px;
 }
-/* line 366, ../scss/main.scss */
+/* line 368, ../scss/main.scss */
 .steps .step-item h2 i {
   color: #4d4d4d;
   margin-left: 10px;
@@ -623,12 +625,12 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-/* line 370, ../scss/main.scss */
+/* line 372, ../scss/main.scss */
 .steps .step-item h2 i:hover {
   color: #cf1f25;
 }
 
-/* line 378, ../scss/main.scss */
+/* line 380, ../scss/main.scss */
 .popup-container {
   position: relative;
   background: white;
@@ -636,29 +638,29 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   max-width: 800px;
   margin: 20px auto;
 }
-/* line 384, ../scss/main.scss */
+/* line 386, ../scss/main.scss */
 .popup-container .popup-image {
   width: 100%;
   border-bottom: 10px solid #e6e6e6;
 }
-/* line 388, ../scss/main.scss */
+/* line 390, ../scss/main.scss */
 .popup-container .popup-text {
   padding: 25px;
 }
 
-/* line 394, ../scss/main.scss */
+/* line 396, ../scss/main.scss */
 #hidden-results {
   display: none;
 }
 
 @-webkit-keyframes fadeIn {
-  /* line 400, ../scss/main.scss */
+  /* line 402, ../scss/main.scss */
   0% {
     opacity: .75;
     left: -1em;
   }
 
-  /* line 401, ../scss/main.scss */
+  /* line 403, ../scss/main.scss */
   100% {
     opacity: 1;
     left: 0;
@@ -666,13 +668,13 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 @-moz-keyframes fadeIn {
-  /* line 404, ../scss/main.scss */
+  /* line 406, ../scss/main.scss */
   0% {
     opacity: .75;
     left: -1em;
   }
 
-  /* line 405, ../scss/main.scss */
+  /* line 407, ../scss/main.scss */
   100% {
     opacity: 1;
     left: 0;
@@ -680,13 +682,13 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 @-o-keyframes fadeIn {
-  /* line 408, ../scss/main.scss */
+  /* line 410, ../scss/main.scss */
   0% {
     opacity: .75;
     left: -1em;
   }
 
-  /* line 409, ../scss/main.scss */
+  /* line 411, ../scss/main.scss */
   100% {
     opacity: 1;
     left: 0;
@@ -694,20 +696,20 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 @keyframes fadeIn {
-  /* line 412, ../scss/main.scss */
+  /* line 414, ../scss/main.scss */
   0% {
     opacity: .75;
     left: -1em;
   }
 
-  /* line 413, ../scss/main.scss */
+  /* line 415, ../scss/main.scss */
   100% {
     opacity: 1;
     left: 0;
   }
 }
 
-/* line 416, ../scss/main.scss */
+/* line 418, ../scss/main.scss */
 .popup-container {
   -webkit-animation-name: fadeIn;
   -moz-animation-name: fadeIn;
@@ -729,24 +731,24 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 /* ---------- PRETTIFY ---------- */
-/* line 439, ../scss/main.scss */
+/* line 441, ../scss/main.scss */
 .prettyprint {
   padding: 20px;
   background: #edf0f3;
 }
-/* line 443, ../scss/main.scss */
+/* line 445, ../scss/main.scss */
 .prettyprint .pln {
   color: #888888;
 }
-/* line 446, ../scss/main.scss */
+/* line 448, ../scss/main.scss */
 .prettyprint .tag {
   color: #5D6C7B;
 }
-/* line 449, ../scss/main.scss */
+/* line 451, ../scss/main.scss */
 .prettyprint .atn {
   color: #225588;
 }
-/* line 452, ../scss/main.scss */
+/* line 454, ../scss/main.scss */
 .prettyprint .atv, .prettyprint .str, .prettyprint .typ, .prettyprint .lit, .prettyprint .pun, .prettyprint .com {
   color: #BE516E;
 }
