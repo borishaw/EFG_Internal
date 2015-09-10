@@ -78,7 +78,7 @@ include('header.php');
                                         </tr>
                                     </table>
                                 </div>
-                                <a class="results-dl-btn">
+                                <a href="#" target="blank" class="results-dl-btn">
                                     <form action="download.php" method="post">
                                         <input type="hidden" name="footer-download" id="footer-download">
                                         <input type="hidden" name="username" value="<?php
@@ -97,7 +97,7 @@ include('header.php');
                                             title="Click to copy me.">Copy to Clipboard
                                     </button>
 										</div>
-										
+
                                 <div class="results-code" contentEditable="true">
                                     <xmp class="prettyprint" id="code-snippet"
                                          onclick="document.execCommand('selectAll',false,null)">
