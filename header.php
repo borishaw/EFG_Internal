@@ -47,7 +47,6 @@
 	 <link rel="stylesheet" type="text/css" href="css/popup.css"> <!-- Magnific Popup -->
 	 <link rel="stylesheet" type="text/css" href="css/main.css"> <!-- Main Stylesheet -->
 	 <link rel="stylesheet" type="text/css" href="css/responsive.css"> <!-- Responsive Stylesheet -->
-	 
 	 <!-- Scripts to be initialized before <body> -->
 	<script src="js/lib/modernizr.custom.js"></script> <!-- Modernizr -->
 	 

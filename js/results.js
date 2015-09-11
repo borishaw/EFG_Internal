@@ -41,7 +41,8 @@ function copyCode() {
 
 $(document).ready(function () {
     //Grab the footer code and append it to the XMP tag
-    $('xmp').text($('#results-visual').html());
+    var footer = $.trim($('#results-visual').html());
+    $('xmp').text(footer);
 
     // Zero Clipboard
     var client = new ZeroClipboard(document.getElementById("copy-button"));
