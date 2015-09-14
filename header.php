@@ -54,3 +54,9 @@
 </head>
 
 <body>
+	
+	<div id="page-loader">
+		<div class="page-loader-inner">
+			<i class="fa fa-circle-o-notch fa-spin"></i>
+		</div>
+	</div>

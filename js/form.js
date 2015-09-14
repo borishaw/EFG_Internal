@@ -80,6 +80,14 @@ $(document).ready(function () {
         }
     });
 	 
+	 
+	/* --------------- Page Loader --------------- */
+	
+	if ($('#page-loader').length) {
+		$('#page-loader').delay(300).fadeOut(1000);
+	}
+	 
+	 
 });
 
 

@@ -133,8 +133,32 @@ body {
   margin-left: 10px;
 }
 
-/* ---------- FORM ---------- */
+/* ---------- PAGE LOADER ---------- */
 /* line 118, ../scss/main.scss */
+#page-loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background: white;
+}
+/* line 127, ../scss/main.scss */
+#page-loader .page-loader-inner {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #E4E4E4;
+  font-size: 50px;
+}
+
+/* ---------- FORM ---------- */
+/* line 140, ../scss/main.scss */
 #form-outer {
   width: 800px;
   height: 630px;
@@ -146,34 +170,34 @@ body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 125, ../scss/main.scss */
+/* line 147, ../scss/main.scss */
 #form-outer .form-header {
   width: 100%;
   text-align: center;
   padding: 25px;
   border-bottom: 1px solid #e6e6e6;
 }
-/* line 130, ../scss/main.scss */
+/* line 152, ../scss/main.scss */
 #form-outer .form-header .autocomplete-btns {
   margin: 25px 0 0;
 }
-/* line 134, ../scss/main.scss */
+/* line 156, ../scss/main.scss */
 #form-outer .form-content {
   padding: 20px 25px;
 }
 
-/* line 140, ../scss/main.scss */
+/* line 162, ../scss/main.scss */
 .no-csstransforms #form {
   top: 40px;
 }
 
-/* line 144, ../scss/main.scss */
+/* line 166, ../scss/main.scss */
 .form-btns {
   width: 100%;
   text-align: center;
   margin-top: 10px;
 }
-/* line 148, ../scss/main.scss */
+/* line 170, ../scss/main.scss */
 .form-btns button {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -184,16 +208,16 @@ body {
   font-weight: 700;
   margin-right: 15px;
 }
-/* line 157, ../scss/main.scss */
+/* line 179, ../scss/main.scss */
 .form-btns button:focus {
   outline: none;
 }
-/* line 160, ../scss/main.scss */
+/* line 182, ../scss/main.scss */
 .form-btns button[type='submit'] {
   background: #4d4d4d;
   color: white;
 }
-/* line 164, ../scss/main.scss */
+/* line 186, ../scss/main.scss */
 .form-btns button[type='reset'] {
   background: transparent;
   border: 1px solid #cccccc;
@@ -403,7 +427,7 @@ body {
   }
 }
 
-/* line 176, ../scss/main.scss */
+/* line 198, ../scss/main.scss */
 div.error {
   position: absolute;
   z-index: 99;
@@ -413,13 +437,13 @@ div.error {
   color: #cf1f25;
 }
 
-/* line 185, ../scss/main.scss */
+/* line 207, ../scss/main.scss */
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   background: transparent;
 }
 
 /* ---------- RESULTS ---------- */
-/* line 191, ../scss/main.scss */
+/* line 213, ../scss/main.scss */
 #results {
   position: relative;
   top: 100px;
@@ -429,45 +453,45 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   background-color: white;
 }
 
-/* line 200, ../scss/main.scss */
+/* line 222, ../scss/main.scss */
 .results-ad-logo {
   position: absolute;
   top: -75px;
   width: 100%;
   text-align: center;
 }
-/* line 206, ../scss/main.scss */
+/* line 228, ../scss/main.scss */
 .results-ad-logo svg path {
   fill: white;
 }
 
-/* line 212, ../scss/main.scss */
+/* line 234, ../scss/main.scss */
 .results-header {
   padding: 10px;
   border: 1px solid #e6e6e6;
   text-align: center;
 }
-/* line 216, ../scss/main.scss */
+/* line 238, ../scss/main.scss */
 .results-header h1 {
   display: inline-block;
 }
-/* line 218, ../scss/main.scss */
+/* line 240, ../scss/main.scss */
 .results-header h1 span {
   font-weight: 700;
 }
-/* line 222, ../scss/main.scss */
+/* line 244, ../scss/main.scss */
 .results-header .redo-btn {
   display: inline-block;
   font-size: 14px;
   margin-left: 10px;
 }
 
-/* line 230, ../scss/main.scss */
+/* line 252, ../scss/main.scss */
 #results-tabs .tab-menu {
   text-align: center;
   padding: 25px 0;
 }
-/* line 233, ../scss/main.scss */
+/* line 255, ../scss/main.scss */
 #results-tabs .tab-menu .tab-menu-item {
   display: inline-block;
   text-align: center;
@@ -477,16 +501,16 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   background: transparent;
   border: 1px solid #cccccc;
 }
-/* line 241, ../scss/main.scss */
+/* line 263, ../scss/main.scss */
 #results-tabs .tab-menu .tab-menu-item.active {
   background: #4d4d4d;
   border-color: #4d4d4d;
 }
-/* line 244, ../scss/main.scss */
+/* line 266, ../scss/main.scss */
 #results-tabs .tab-menu .tab-menu-item.active a {
   color: white;
 }
-/* line 248, ../scss/main.scss */
+/* line 270, ../scss/main.scss */
 #results-tabs .tab-menu .tab-menu-item a {
   display: block;
   width: 100%;
@@ -495,26 +519,26 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   color: #4d4d4d;
 }
 
-/* line 259, ../scss/main.scss */
+/* line 281, ../scss/main.scss */
 .tab-content-item {
   width: 100%;
   pointer-events: none;
 }
-/* line 262, ../scss/main.scss */
+/* line 284, ../scss/main.scss */
 .tab-content-item.active {
   pointer-events: all;
 }
 
-/* line 267, ../scss/main.scss */
+/* line 289, ../scss/main.scss */
 .col-results-visual {
   margin-bottom: 30px;
 }
-/* line 270, ../scss/main.scss */
+/* line 292, ../scss/main.scss */
 .col-results-visual .results-dl-btn {
   text-align: center;
 }
 
-/* line 275, ../scss/main.scss */
+/* line 297, ../scss/main.scss */
 .results-visual {
   width: 100%;
   height: 200px;
@@ -522,12 +546,12 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   overflow: auto;
   line-height: 1;
 }
-/* line 282, ../scss/main.scss */
+/* line 304, ../scss/main.scss */
 .results-visual td, .results-visual tr {
   vertical-align: middle !important;
 }
 
-/* line 287, ../scss/main.scss */
+/* line 309, ../scss/main.scss */
 .dl-btn {
   margin: 0 auto;
   width: 100%;
@@ -538,7 +562,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   color: #4d4d4d;
 }
 
-/* line 297, ../scss/main.scss */
+/* line 319, ../scss/main.scss */
 .results-code {
   width: 100%;
   height: 400px;
@@ -549,12 +573,12 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   font-size: 12px;
   position: relative;
 }
-/* line 307, ../scss/main.scss */
+/* line 329, ../scss/main.scss */
 .results-code xmp {
   margin: 0;
 }
 
-/* line 313, ../scss/main.scss */
+/* line 335, ../scss/main.scss */
 .copy-button-wrapper {
   position: absolute;
   z-index: 10;
@@ -562,7 +586,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   top: 0;
 }
 
-/* line 320, ../scss/main.scss */
+/* line 342, ../scss/main.scss */
 #copy-button-prompt {
   background: #cf1f25;
   padding: 4px;
@@ -576,7 +600,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   right: -7px;
   display: none;
 }
-/* line 332, ../scss/main.scss */
+/* line 354, ../scss/main.scss */
 #copy-button-prompt:after {
   content: '';
   position: absolute;
@@ -590,7 +614,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   border-top: 7px solid #cf1f25;
 }
 
-/* line 346, ../scss/main.scss */
+/* line 368, ../scss/main.scss */
 #copy-button {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -601,7 +625,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   font-size: 14px;
 }
 
-/* line 357, ../scss/main.scss */
+/* line 379, ../scss/main.scss */
 .steps .steps-needed {
   width: 100%;
   min-height: 200px;
@@ -609,17 +633,17 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   padding: 25px;
   line-height: 1.8em;
 }
-/* line 363, ../scss/main.scss */
+/* line 385, ../scss/main.scss */
 .steps .steps-needed .steps-hint {
   font-size: 16px;
   color: #cccccc;
   margin-top: 15px;
 }
-/* line 369, ../scss/main.scss */
+/* line 391, ../scss/main.scss */
 .steps .step-item {
   margin-bottom: 40px;
 }
-/* line 372, ../scss/main.scss */
+/* line 394, ../scss/main.scss */
 .steps .step-item h2 i {
   color: #4d4d4d;
   margin-left: 10px;
@@ -629,12 +653,12 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-/* line 376, ../scss/main.scss */
+/* line 398, ../scss/main.scss */
 .steps .step-item h2 i:hover {
   color: #cf1f25;
 }
 
-/* line 384, ../scss/main.scss */
+/* line 406, ../scss/main.scss */
 .popup-container {
   position: relative;
   background: white;
@@ -642,29 +666,29 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   max-width: 800px;
   margin: 20px auto;
 }
-/* line 390, ../scss/main.scss */
+/* line 412, ../scss/main.scss */
 .popup-container .popup-image {
   width: 100%;
   border-bottom: 10px solid #e6e6e6;
 }
-/* line 394, ../scss/main.scss */
+/* line 416, ../scss/main.scss */
 .popup-container .popup-text {
   padding: 25px;
 }
 
-/* line 400, ../scss/main.scss */
+/* line 422, ../scss/main.scss */
 #hidden-results {
   display: none;
 }
 
 @-webkit-keyframes fadeIn {
-  /* line 406, ../scss/main.scss */
+  /* line 428, ../scss/main.scss */
   0% {
     opacity: .75;
     left: -1em;
   }
 
-  /* line 407, ../scss/main.scss */
+  /* line 429, ../scss/main.scss */
   100% {
     opacity: 1;
     left: 0;
@@ -672,13 +696,13 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 @-moz-keyframes fadeIn {
-  /* line 410, ../scss/main.scss */
+  /* line 432, ../scss/main.scss */
   0% {
     opacity: .75;
     left: -1em;
   }
 
-  /* line 411, ../scss/main.scss */
+  /* line 433, ../scss/main.scss */
   100% {
     opacity: 1;
     left: 0;
@@ -686,13 +710,13 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 @-o-keyframes fadeIn {
-  /* line 414, ../scss/main.scss */
+  /* line 436, ../scss/main.scss */
   0% {
     opacity: .75;
     left: -1em;
   }
 
-  /* line 415, ../scss/main.scss */
+  /* line 437, ../scss/main.scss */
   100% {
     opacity: 1;
     left: 0;
@@ -700,20 +724,20 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 @keyframes fadeIn {
-  /* line 418, ../scss/main.scss */
+  /* line 440, ../scss/main.scss */
   0% {
     opacity: .75;
     left: -1em;
   }
 
-  /* line 419, ../scss/main.scss */
+  /* line 441, ../scss/main.scss */
   100% {
     opacity: 1;
     left: 0;
   }
 }
 
-/* line 422, ../scss/main.scss */
+/* line 444, ../scss/main.scss */
 .popup-container {
   -webkit-animation-name: fadeIn;
   -moz-animation-name: fadeIn;
@@ -735,24 +759,24 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 /* ---------- PRETTIFY ---------- */
-/* line 445, ../scss/main.scss */
+/* line 467, ../scss/main.scss */
 .prettyprint {
   padding: 20px;
   background: #edf0f3;
 }
-/* line 449, ../scss/main.scss */
+/* line 471, ../scss/main.scss */
 .prettyprint .pln {
   color: #888888;
 }
-/* line 452, ../scss/main.scss */
+/* line 474, ../scss/main.scss */
 .prettyprint .tag {
   color: #5D6C7B;
 }
-/* line 455, ../scss/main.scss */
+/* line 477, ../scss/main.scss */
 .prettyprint .atn {
   color: #225588;
 }
-/* line 458, ../scss/main.scss */
+/* line 480, ../scss/main.scss */
 .prettyprint .atv, .prettyprint .str, .prettyprint .typ, .prettyprint .lit, .prettyprint .pun, .prettyprint .com {
   color: #BE516E;
 }
