@@ -40,7 +40,7 @@ include('header.php');
                     <div class="tab-content-item">
                         <div class="row">
                             <div class="col-md-12 col-results-visual">
-                                <div id="results-visual" class="results-visual" contenteditable="true">
+                                <div id="results-visual" class="results-visual" contenteditable="false">
                                     <table style="margin-top:40px;margin-left:20px;margin-bottom:30px;width:95%"
                                            border="0">
                                         <tr height="60">
