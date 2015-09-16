@@ -44,7 +44,10 @@
 	 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,400italic|Noto+Serif:400,400italic' rel='stylesheet' type='text/css'> <!-- Google Fonts -->
 	 <link rel="stylesheet" type="text/css" href="css/lib/font-awesome.min.css"> <!-- Font Awesome -->
 	  <link rel="stylesheet" type="text/css" href="css/lib/tooltipster.css" /> <!-- Tooltipster -->
-	 <link rel="stylesheet" type="text/css" href="css/popup.css"> <!-- Magnific Popup -->
+	  <?php if ($active == 'results'): ?>
+			<link rel="stylesheet" type="text/css" href="css/lightgallery.css"> <!-- LightGallery -->
+			<link rel="stylesheet" type="text/css" href="css/lib/lg-transitions.min.css">
+	  <?php endif; ?>
 	 <link rel="stylesheet" type="text/css" href="css/main.css"> <!-- Main Stylesheet -->
 	 <link rel="stylesheet" type="text/css" href="css/responsive.css"> <!-- Responsive Stylesheet -->
 	 <!-- Scripts to be initialized before <body> -->

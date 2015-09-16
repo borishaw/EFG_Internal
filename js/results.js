@@ -12,21 +12,24 @@ $(function () {
             animateHeight: !1, fixedHeight: !1
         });
     }
+	 
+	 /* --------------- Light Gallery  --------------- */
 
-    $('.open-popup-link').magnificPopup({
-        type: 'inline',
-        midClick: true, // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-        fixedContentPos: false,
-        fixedBgPos: true,
-        overflowY: 'auto',
-        closeBtnInside: true,
-        preloader: false,
-        removalDelay: 300,
-        mainClass: 'my-mfp-zoom-in',
-        gallery: {
-            enabled: true
-        }
-    });
+     $("#gmail-instructions").lightGallery({
+			selector: '.gallery-link',
+			loop: false,
+			download: false,
+		});
+	  $("#mac-instructions").lightGallery({
+			selector: '.gallery-link',
+			loop: false,
+			download: false,
+		}); 
+	  $("#outlook-instructions").lightGallery({
+			selector: '.gallery-link',
+			loop: false,
+			download: false,
+		}); 
 
 	 
 	/* --------------- Page Loader --------------- */

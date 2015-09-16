@@ -1,0 +1,600 @@
+@font-face {
+  font-family: 'lg';
+  src: url("../fonts/lg.eot?n1z373");
+  src: url("../fonts/lg.eot?#iefixn1z373") format("embedded-opentype"), url("../fonts/lg.woff?n1z373") format("woff"), url("../fonts/lg.ttf?n1z373") format("truetype"), url("../fonts/lg.svg?n1z373#lg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 11, ../scss/_lg-fonts.scss */
+.lg-icon {
+  font-family: 'lg';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 3, ../scss/_lg-theme-default.scss */
+.lg-actions .lg-next, .lg-actions .lg-prev {
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 2px;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  display: block;
+  font-size: 22px;
+  margin-top: -10px;
+  padding: 8px 10px 9px;
+  position: absolute;
+  top: 50%;
+  z-index: 1080;
+}
+/* line 16, ../scss/_lg-theme-default.scss */
+.lg-actions .lg-next.disabled, .lg-actions .lg-prev.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+/* line 21, ../scss/_lg-theme-default.scss */
+.lg-actions .lg-next:hover, .lg-actions .lg-prev:hover {
+  color: #cf1f25;
+}
+/* line 26, ../scss/_lg-theme-default.scss */
+.lg-actions .lg-next {
+  right: 20px;
+}
+/* line 29, ../scss/_lg-theme-default.scss */
+.lg-actions .lg-next:before {
+  content: "\e095";
+}
+/* line 34, ../scss/_lg-theme-default.scss */
+.lg-actions .lg-prev {
+  left: 20px;
+}
+/* line 37, ../scss/_lg-theme-default.scss */
+.lg-actions .lg-prev:after {
+  content: "\e094";
+}
+
+@-webkit-keyframes lg-right-end {
+  /* line 44, ../scss/_lg-theme-default.scss */
+  0% {
+    left: 0;
+  }
+
+  /* line 48, ../scss/_lg-theme-default.scss */
+  50% {
+    left: -30px;
+  }
+
+  /* line 52, ../scss/_lg-theme-default.scss */
+  100% {
+    left: 0;
+  }
+}
+
+@-moz-keyframes lg-right-end {
+  /* line 44, ../scss/_lg-theme-default.scss */
+  0% {
+    left: 0;
+  }
+
+  /* line 48, ../scss/_lg-theme-default.scss */
+  50% {
+    left: -30px;
+  }
+
+  /* line 52, ../scss/_lg-theme-default.scss */
+  100% {
+    left: 0;
+  }
+}
+
+@-ms-keyframes lg-right-end {
+  /* line 44, ../scss/_lg-theme-default.scss */
+  0% {
+    left: 0;
+  }
+
+  /* line 48, ../scss/_lg-theme-default.scss */
+  50% {
+    left: -30px;
+  }
+
+  /* line 52, ../scss/_lg-theme-default.scss */
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes lg-right-end {
+  /* line 44, ../scss/_lg-theme-default.scss */
+  0% {
+    left: 0;
+  }
+
+  /* line 48, ../scss/_lg-theme-default.scss */
+  50% {
+    left: -30px;
+  }
+
+  /* line 52, ../scss/_lg-theme-default.scss */
+  100% {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes lg-left-end {
+  /* line 59, ../scss/_lg-theme-default.scss */
+  0% {
+    left: 0;
+  }
+
+  /* line 63, ../scss/_lg-theme-default.scss */
+  50% {
+    left: 30px;
+  }
+
+  /* line 67, ../scss/_lg-theme-default.scss */
+  100% {
+    left: 0;
+  }
+}
+
+@-moz-keyframes lg-left-end {
+  /* line 59, ../scss/_lg-theme-default.scss */
+  0% {
+    left: 0;
+  }
+
+  /* line 63, ../scss/_lg-theme-default.scss */
+  50% {
+    left: 30px;
+  }
+
+  /* line 67, ../scss/_lg-theme-default.scss */
+  100% {
+    left: 0;
+  }
+}
+
+@-ms-keyframes lg-left-end {
+  /* line 59, ../scss/_lg-theme-default.scss */
+  0% {
+    left: 0;
+  }
+
+  /* line 63, ../scss/_lg-theme-default.scss */
+  50% {
+    left: 30px;
+  }
+
+  /* line 67, ../scss/_lg-theme-default.scss */
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes lg-left-end {
+  /* line 59, ../scss/_lg-theme-default.scss */
+  0% {
+    left: 0;
+  }
+
+  /* line 63, ../scss/_lg-theme-default.scss */
+  50% {
+    left: 30px;
+  }
+
+  /* line 67, ../scss/_lg-theme-default.scss */
+  100% {
+    left: 0;
+  }
+}
+
+/* line 75, ../scss/_lg-theme-default.scss */
+.lg-outer.lg-right-end .lg-object {
+  -webkit-animation: lg-right-end 0.3s;
+  -o-animation: lg-right-end 0.3s;
+  animation: lg-right-end 0.3s;
+  position: relative;
+}
+/* line 82, ../scss/_lg-theme-default.scss */
+.lg-outer.lg-left-end .lg-object {
+  -webkit-animation: lg-left-end 0.3s;
+  -o-animation: lg-left-end 0.3s;
+  animation: lg-left-end 0.3s;
+  position: relative;
+}
+
+/* line 90, ../scss/_lg-theme-default.scss */
+.lg-toolbar {
+  z-index: 1080;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgba(224, 224, 224, 0.8);
+}
+/* line 98, ../scss/_lg-theme-default.scss */
+.lg-toolbar .lg-icon {
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  float: right;
+  font-size: 24px;
+  height: 47px;
+  line-height: 27px;
+  padding: 10px 0;
+  text-align: center;
+  width: 50px;
+  text-decoration: none !important;
+  outline: medium none;
+}
+/* line 111, ../scss/_lg-theme-default.scss */
+.lg-toolbar .lg-icon:hover {
+  color: #cf1f25;
+}
+/* line 117, ../scss/_lg-theme-default.scss */
+.lg-toolbar .lg-close:after {
+  content: "\e070";
+}
+/* line 123, ../scss/_lg-theme-default.scss */
+.lg-toolbar .lg-download:after {
+  content: "\e0f2";
+}
+
+/* line 130, ../scss/_lg-theme-default.scss */
+.lg-sub-html {
+  background-color: rgba(0, 0, 0, 0.8);
+  bottom: 0;
+  color: #eeeeee;
+  font-size: 16px;
+  left: 0;
+  padding: 20px 40px;
+  position: fixed;
+  right: 0;
+  text-align: center;
+  z-index: 1080;
+}
+/* line 142, ../scss/_lg-theme-default.scss */
+.lg-sub-html h4 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: bold;
+}
+/* line 148, ../scss/_lg-theme-default.scss */
+.lg-sub-html h2 {
+  margin-top: 0;
+}
+/* line 150, ../scss/_lg-theme-default.scss */
+.lg-sub-html h2 i {
+  display: none;
+}
+/* line 155, ../scss/_lg-theme-default.scss */
+.lg-sub-html p {
+  font-size: 14px;
+  margin: 5px 0 0;
+  line-height: 1.5em;
+}
+
+/* line 163, ../scss/_lg-theme-default.scss */
+#lg-counter {
+  color: rgba(0, 0, 0, 0.8);
+  display: inline-block;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-top: 12px;
+  vertical-align: middle;
+}
+
+/* line 173, ../scss/_lg-theme-default.scss */
+.lg-toolbar, .lg-prev, .lg-next {
+  opacity: 1;
+  -webkit-transition: -webkit-transform 0.35s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.35s cubic-bezier(0, 0, 0.25, 1) 0s;
+  -moz-transition: -moz-transform 0.35s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.35s cubic-bezier(0, 0, 0.25, 1) 0s;
+  -o-transition: -o-transform 0.35s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.35s cubic-bezier(0, 0, 0.25, 1) 0s;
+  transition: transform 0.35s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.35s cubic-bezier(0, 0, 0.25, 1) 0s;
+}
+
+/* line 179, ../scss/_lg-theme-default.scss */
+.lg-hide-items .lg-prev {
+  opacity: 0;
+  -webkit-transform: translate3d(-10px, 0, 0);
+  transform: translate3d(-10px, 0, 0);
+}
+/* line 184, ../scss/_lg-theme-default.scss */
+.lg-hide-items .lg-next {
+  opacity: 0;
+  -webkit-transform: translate3d(10px, 0, 0);
+  transform: translate3d(10px, 0, 0);
+}
+/* line 189, ../scss/_lg-theme-default.scss */
+.lg-hide-items .lg-toolbar {
+  opacity: 0;
+  -webkit-transform: translate3d(0, -10px, 0);
+  transform: translate3d(0, -10px, 0);
+}
+
+/* line 199, ../scss/_lg-theme-default.scss */
+body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-object {
+  -webkit-transform: scale3d(0.5, 0.5, 0.5);
+  transform: scale3d(0.5, 0.5, 0.5);
+  opacity: 0;
+  -webkit-transition: -webkit-transform 250ms ease 0s, opacity 250ms !important;
+  -moz-transition: -moz-transform 250ms ease 0s, opacity 250ms !important;
+  -o-transition: -o-transform 250ms ease 0s, opacity 250ms !important;
+  transition: transform 250ms ease 0s, opacity 250ms !important;
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+}
+/* line 206, ../scss/_lg-theme-default.scss */
+body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object {
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  opacity: 1;
+}
+
+/*@import "lg-thumbnail";
+@import "lg-video";
+@import "lg-autoplay";
+@import "lg-zoom";
+@import "lg-pager";
+@import "lg-fullscreen";*/
+/* line 14, ../scss/lightgallery.scss */
+.group {
+  *zoom: 1;
+}
+
+/* line 18, ../scss/lightgallery.scss */
+.group:before, .group:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+/* line 24, ../scss/lightgallery.scss */
+.group:after {
+  clear: both;
+}
+
+/* line 29, ../scss/lightgallery.scss */
+.lg-outer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  opacity: 0;
+  -webkit-transition: opacity 0.15s ease 0s;
+  -o-transition: opacity 0.15s ease 0s;
+  transition: opacity 0.15s ease 0s;
+}
+/* line 40, ../scss/lightgallery.scss */
+.lg-outer * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 44, ../scss/lightgallery.scss */
+.lg-outer.lg-visible {
+  opacity: 1;
+}
+/* line 51, ../scss/lightgallery.scss */
+.lg-outer.lg-css3 .lg-item.lg-prev-slide, .lg-outer.lg-css3 .lg-item.lg-next-slide, .lg-outer.lg-css3 .lg-item.lg-current {
+  -webkit-transition-duration: inherit !important;
+  transition-duration: inherit !important;
+  -webkit-transition-timing-function: inherit !important;
+  transition-timing-function: inherit !important;
+}
+/* line 61, ../scss/lightgallery.scss */
+.lg-outer.lg-css3.lg-dragging .lg-item.lg-prev-slide, .lg-outer.lg-css3.lg-dragging .lg-item.lg-next-slide, .lg-outer.lg-css3.lg-dragging .lg-item.lg-current {
+  -webkit-transition-duration: 0s !important;
+  transition-duration: 0s !important;
+  opacity: 1;
+}
+/* line 70, ../scss/lightgallery.scss */
+.lg-outer.lg-grab img.lg-object {
+  cursor: -webkit-grab;
+  cursor: -moz-grab;
+  cursor: -o-grab;
+  cursor: -ms-grab;
+  cursor: grab;
+}
+/* line 76, ../scss/lightgallery.scss */
+.lg-outer.lg-grabbing img.lg-object {
+  cursor: move;
+  cursor: -webkit-grabbing;
+  cursor: -moz-grabbing;
+  cursor: -o-grabbing;
+  cursor: -ms-grabbing;
+  cursor: grabbing;
+}
+/* line 81, ../scss/lightgallery.scss */
+.lg-outer .lg {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+/* line 92, ../scss/lightgallery.scss */
+.lg-outer .lg-inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+}
+/* line 101, ../scss/lightgallery.scss */
+.lg-outer .lg-item {
+  background: url(../img/loading.gif) no-repeat scroll center center transparent;
+}
+/* line 105, ../scss/lightgallery.scss */
+.lg-outer .lg-item, .lg-outer .lg-img-wrap {
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* line 112, ../scss/lightgallery.scss */
+.lg-outer .lg-item:before, .lg-outer .lg-img-wrap:before {
+  content: "";
+  display: inline-block;
+  height: 50%;
+  width: 1px;
+}
+/* line 121, ../scss/lightgallery.scss */
+.lg-outer .lg-img-wrap {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 5px;
+}
+/* line 130, ../scss/lightgallery.scss */
+.lg-outer .lg-item.lg-complete {
+  background-image: none;
+}
+/* line 134, ../scss/lightgallery.scss */
+.lg-outer .lg-item.lg-current {
+  z-index: 1060;
+}
+/* line 139, ../scss/lightgallery.scss */
+.lg-outer .lg-image {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto !important;
+  height: auto !important;
+}
+/* line 150, ../scss/lightgallery.scss */
+.lg-outer.lg-show-after-load .lg-item .lg-object, .lg-outer.lg-show-after-load .lg-item .lg-video-play {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s ease 0s;
+  -o-transition: opacity 0.15s ease 0s;
+  transition: opacity 0.15s ease 0s;
+}
+/* line 156, ../scss/lightgallery.scss */
+.lg-outer.lg-show-after-load .lg-item.lg-complete .lg-object, .lg-outer.lg-show-after-load .lg-item.lg-complete .lg-video-play {
+  opacity: 1;
+}
+/* line 164, ../scss/lightgallery.scss */
+.lg-outer .lg-empty-html {
+  display: none;
+}
+
+/* line 168, ../scss/lightgallery.scss */
+.lg-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1040;
+  background-color: #F7F7F7;
+  opacity: 0;
+  -webkit-transition: opacity 0.15s ease 0s;
+  -o-transition: opacity 0.15s ease 0s;
+  transition: opacity 0.15s ease 0s;
+}
+/* line 178, ../scss/lightgallery.scss */
+.lg-backdrop.in {
+  opacity: 1;
+}
+
+/* line 188, ../scss/lightgallery.scss */
+.lg-css3.lg-no-trans .lg-prev-slide, .lg-css3.lg-no-trans .lg-next-slide, .lg-css3.lg-no-trans .lg-current {
+  -webkit-transition: none 0s ease 0s !important;
+  -moz-transition: none 0s ease 0s !important;
+  -o-transition: none 0s ease 0s !important;
+  transition: none 0s ease 0s !important;
+}
+/* line 194, ../scss/lightgallery.scss */
+.lg-css3.lg-use-css3 .lg-item {
+  will-change: transform, opacity;
+}
+/* line 200, ../scss/lightgallery.scss */
+.lg-css3.lg-use-left .lg-item {
+  will-change: left, opacity;
+}
+/* line 207, ../scss/lightgallery.scss */
+.lg-css3.lg-fade .lg-item {
+  opacity: 0;
+}
+/* line 210, ../scss/lightgallery.scss */
+.lg-css3.lg-fade .lg-item.lg-current {
+  opacity: 1;
+}
+/* line 215, ../scss/lightgallery.scss */
+.lg-css3.lg-fade .lg-item.lg-prev-slide, .lg-css3.lg-fade .lg-item.lg-next-slide, .lg-css3.lg-fade .lg-item.lg-current {
+  -webkit-transition: opacity 0.1s ease 0s;
+  -moz-transition: opacity 0.1s ease 0s;
+  -o-transition: opacity 0.1s ease 0s;
+  transition: opacity 0.1s ease 0s;
+}
+/* line 223, ../scss/lightgallery.scss */
+.lg-css3.lg-slide.lg-use-css3 .lg-item {
+  opacity: 0;
+}
+/* line 226, ../scss/lightgallery.scss */
+.lg-css3.lg-slide.lg-use-css3 .lg-item.lg-prev-slide {
+  -webkit-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+/* line 230, ../scss/lightgallery.scss */
+.lg-css3.lg-slide.lg-use-css3 .lg-item.lg-next-slide {
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+/* line 234, ../scss/lightgallery.scss */
+.lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+/* line 240, ../scss/lightgallery.scss */
+.lg-css3.lg-slide.lg-use-css3 .lg-item.lg-prev-slide, .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-next-slide, .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
+  -moz-transition: -moz-transform 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
+  -o-transition: -o-transform 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
+  transition: transform 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
+}
+/* line 247, ../scss/lightgallery.scss */
+.lg-css3.lg-slide.lg-use-left .lg-item {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+}
+/* line 252, ../scss/lightgallery.scss */
+.lg-css3.lg-slide.lg-use-left .lg-item.lg-prev-slide {
+  left: -100%;
+}
+/* line 256, ../scss/lightgallery.scss */
+.lg-css3.lg-slide.lg-use-left .lg-item.lg-next-slide {
+  left: 100%;
+}
+/* line 260, ../scss/lightgallery.scss */
+.lg-css3.lg-slide.lg-use-left .lg-item.lg-current {
+  left: 0;
+  opacity: 1;
+}
+/* line 266, ../scss/lightgallery.scss */
+.lg-css3.lg-slide.lg-use-left .lg-item.lg-prev-slide, .lg-css3.lg-slide.lg-use-left .lg-item.lg-next-slide, .lg-css3.lg-slide.lg-use-left .lg-item.lg-current {
+  -webkit-transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
+  -moz-transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
+  -o-transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
+  transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;
+}
