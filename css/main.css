@@ -531,7 +531,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 
 /* line 289, ../scss/main.scss */
 .col-results-visual {
-  margin-bottom: 30px;
+  margin: 20px 0 30px;
 }
 /* line 292, ../scss/main.scss */
 .col-results-visual .results-dl-btn {
@@ -545,13 +545,15 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   margin-bottom: 25px;
   overflow: auto;
   line-height: 1;
+  border: 1px solid #cccccc;
+  font: initial;
 }
-/* line 304, ../scss/main.scss */
+/* line 306, ../scss/main.scss */
 .results-visual td, .results-visual tr {
   vertical-align: middle !important;
 }
 
-/* line 309, ../scss/main.scss */
+/* line 311, ../scss/main.scss */
 .dl-btn {
   margin: 0 auto;
   width: 100%;
@@ -562,7 +564,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   color: #4d4d4d;
 }
 
-/* line 319, ../scss/main.scss */
+/* line 321, ../scss/main.scss */
 .results-code {
   width: 100%;
   height: 400px;
@@ -573,21 +575,21 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   font-size: 12px;
   position: relative;
 }
-/* line 329, ../scss/main.scss */
+/* line 331, ../scss/main.scss */
 .results-code xmp {
   margin: 0;
 }
 
-/* line 335, ../scss/main.scss */
+/* line 337, ../scss/main.scss */
 .copy-button-wrapper {
   position: absolute;
   z-index: 10;
-  right: 21px;
+  right: 15px;
   top: 0;
 }
 
-/* line 342, ../scss/main.scss */
-#copy-button-prompt {
+/* line 344, ../scss/main.scss */
+.copy-button-prompt {
   background: #cf1f25;
   padding: 4px;
   color: white;
@@ -600,8 +602,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   right: -7px;
   display: none;
 }
-/* line 354, ../scss/main.scss */
-#copy-button-prompt:after {
+/* line 356, ../scss/main.scss */
+.copy-button-prompt:after {
   content: '';
   position: absolute;
   bottom: -7px;
@@ -614,8 +616,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   border-top: 7px solid #cf1f25;
 }
 
-/* line 368, ../scss/main.scss */
-#copy-button {
+/* line 370, ../scss/main.scss */
+.copy-button {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -623,9 +625,10 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   color: white;
   border: none;
   font-size: 14px;
+  padding-right: 6px;
 }
 
-/* line 379, ../scss/main.scss */
+/* line 382, ../scss/main.scss */
 .steps .steps-needed {
   width: 100%;
   min-height: 200px;
@@ -633,17 +636,17 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   padding: 25px;
   line-height: 1.8em;
 }
-/* line 385, ../scss/main.scss */
+/* line 388, ../scss/main.scss */
 .steps .steps-needed .steps-hint {
   font-size: 16px;
   color: #cccccc;
   margin-top: 15px;
 }
-/* line 391, ../scss/main.scss */
+/* line 394, ../scss/main.scss */
 .steps .step-item {
   margin-bottom: 40px;
 }
-/* line 394, ../scss/main.scss */
+/* line 397, ../scss/main.scss */
 .steps .step-item h2 i {
   color: #4d4d4d;
   margin-left: 10px;
@@ -653,12 +656,12 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-/* line 398, ../scss/main.scss */
+/* line 401, ../scss/main.scss */
 .steps .step-item h2 i:hover {
   color: #cf1f25;
 }
 
-/* line 406, ../scss/main.scss */
+/* line 409, ../scss/main.scss */
 .popup-container {
   position: relative;
   background: white;
@@ -666,29 +669,29 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   max-width: 800px;
   margin: 20px auto;
 }
-/* line 412, ../scss/main.scss */
+/* line 415, ../scss/main.scss */
 .popup-container .popup-image {
   width: 100%;
   border-bottom: 10px solid #e6e6e6;
 }
-/* line 416, ../scss/main.scss */
+/* line 419, ../scss/main.scss */
 .popup-container .popup-text {
   padding: 25px;
 }
 
-/* line 422, ../scss/main.scss */
+/* line 425, ../scss/main.scss */
 #hidden-results {
   display: none;
 }
 
 @-webkit-keyframes fadeIn {
-  /* line 428, ../scss/main.scss */
+  /* line 431, ../scss/main.scss */
   0% {
     opacity: .75;
     left: -1em;
   }
 
-  /* line 429, ../scss/main.scss */
+  /* line 432, ../scss/main.scss */
   100% {
     opacity: 1;
     left: 0;
@@ -696,13 +699,13 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 @-moz-keyframes fadeIn {
-  /* line 432, ../scss/main.scss */
+  /* line 435, ../scss/main.scss */
   0% {
     opacity: .75;
     left: -1em;
   }
 
-  /* line 433, ../scss/main.scss */
+  /* line 436, ../scss/main.scss */
   100% {
     opacity: 1;
     left: 0;
@@ -710,13 +713,13 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 @-o-keyframes fadeIn {
-  /* line 436, ../scss/main.scss */
+  /* line 439, ../scss/main.scss */
   0% {
     opacity: .75;
     left: -1em;
   }
 
-  /* line 437, ../scss/main.scss */
+  /* line 440, ../scss/main.scss */
   100% {
     opacity: 1;
     left: 0;
@@ -724,20 +727,20 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 @keyframes fadeIn {
-  /* line 440, ../scss/main.scss */
+  /* line 443, ../scss/main.scss */
   0% {
     opacity: .75;
     left: -1em;
   }
 
-  /* line 441, ../scss/main.scss */
+  /* line 444, ../scss/main.scss */
   100% {
     opacity: 1;
     left: 0;
   }
 }
 
-/* line 444, ../scss/main.scss */
+/* line 447, ../scss/main.scss */
 .popup-container {
   -webkit-animation-name: fadeIn;
   -moz-animation-name: fadeIn;
@@ -759,24 +762,24 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 /* ---------- PRETTIFY ---------- */
-/* line 467, ../scss/main.scss */
+/* line 470, ../scss/main.scss */
 .prettyprint {
   padding: 20px;
   background: #edf0f3;
 }
-/* line 471, ../scss/main.scss */
+/* line 474, ../scss/main.scss */
 .prettyprint .pln {
   color: #888888;
 }
-/* line 474, ../scss/main.scss */
+/* line 477, ../scss/main.scss */
 .prettyprint .tag {
   color: #5D6C7B;
 }
-/* line 477, ../scss/main.scss */
+/* line 480, ../scss/main.scss */
 .prettyprint .atn {
   color: #225588;
 }
-/* line 480, ../scss/main.scss */
+/* line 483, ../scss/main.scss */
 .prettyprint .atv, .prettyprint .str, .prettyprint .typ, .prettyprint .lit, .prettyprint .pun, .prettyprint .com {
   color: #BE516E;
 }

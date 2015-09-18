@@ -287,7 +287,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 .col-results-visual {
-	margin-bottom: 30px;
+	margin: 20px 0 30px;
 	
 	.results-dl-btn {
 		text-align: center;
@@ -300,6 +300,8 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 	margin-bottom: 25px;
 	overflow: auto;
 	line-height: 1;
+	border: 1px solid $gray-med;
+	font: initial;
 	
 	td, tr {
 		vertical-align: middle !important
@@ -335,11 +337,11 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 .copy-button-wrapper {
 	position: absolute;
 	z-index: 10;
-	right: 21px;
+	right: 15px;
 	top: 0;
 }
 
-#copy-button-prompt {
+.copy-button-prompt {
 	background: $ankit-red;
 	padding: 4px;
 	color: $white;
@@ -365,7 +367,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 	}
 }
 
-#copy-button {
+.copy-button {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	appearance: none;
@@ -373,6 +375,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 	color: $white;
 	border: none;
 	font-size: 14px;
+	padding-right: 6px;
 }
 
 .steps {

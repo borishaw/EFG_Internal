@@ -56,14 +56,19 @@ $(document).ready(function () {
     // Zero Clipboard
     var client = new ZeroClipboard(document.getElementById("copy-button"));
     client.on("ready", function (readyEvent) {
-        console.log( "ZeroClipboard SWF is ready!" );
+        // console.log( "ZeroClipboard SWF is ready!" );
 
         client.on("aftercopy", function (event) {
-            //event.target.style.display = "none";
-            //alert("Copied text to clipboard: " + event.data["text/plain"] );
-            // $('#copy-button').html("Copied!");
             $('#copy-button-prompt').fadeIn().delay(1000).fadeOut();
-            // document.selection.empty();
+            window.getSelection().removeAllRanges();
+        });
+    });
+	 var client2 = new ZeroClipboard(document.getElementById("copy-button-visual"));
+    client2.on("ready", function (readyEvent) {
+        // console.log( "ZeroClipboard SWF is ready!" );
+
+        client2.on("aftercopy", function (event) {
+            $('#copy-button-prompt-visual').fadeIn().delay(1000).fadeOut();
             window.getSelection().removeAllRanges();
         });
     });
